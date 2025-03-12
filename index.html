@@ -3,9 +3,7 @@
 <!-- 
 Within your body tag, use HTML tags to organize the recipe content:
 create a central div with a width of 1200px that contains the entire recipe.
-use at least three different type of headers (h1, h2, h3, etc.) for different headlines or titles in the recipe.
-use the paragraph tag for each preparation instruction paragraph
-use an unordered list to organize the ingredients.
+
 Using what we learned in the CSS positioning lecture, demo, and exercise, create a 2-column design with the title/credits and Ingredients on the left and the photo and preparation instructions on the right. You will need to figure out the width and proportions of your columns.
 Use Google Fonts to select at least two and a maximum of three fonts to typeset the recipe. Note: the second half of the lecture shows how to setup Google Fonts.
 Now, typeset the page to be attractive:
@@ -27,33 +25,71 @@ Submit the link to your published webpage to LEARN. Note: do not submit a link t
 <head>
     <meta charset="utc-8">
     <title>Exercise 7: Typography</title>
-  <style> </style>
+  <style>
+    .centralbar,.titlebar,.imagebar,
+    body {
+      background-color: yellow;
+      background-position: center;
+     }
+    
+    .centralbar{ width: 1200px;
+      background-color: violet;
+      
+    }
+    .titlebar{
+       background-color: red;
+         width: 25%;
+      float: left;
+    }
+    .imagebar{
+       background-color: green;
+      width: 50%;
+      float: right;
+    }
+  </style>
   </head>
-Spinach, Tofu and Sesame Stir-Fry
+  
+  <body>
+    <div class="centralbar">
+      
+    <div class="titlebar">
+    <h1>Spinach, Tofu and Sesame Stir-Fry</h1>
 By: Martha Rose Shulman
 Yield: 3 Servings
-<img src="excercise 7 image.jpg"/ alt= "for now" width=" 500" height="500" > 
-Ingredients
+    
 
-1 tablespoon canola oil
-½ pound tofu, cut in small dice
-1 large garlic clove, minced
-1 teaspoon grated or minced fresh ginger
-¼ teaspoon red chili flakes
-Soy sauce to taste
-16-ounce bag baby spinach, rinsed
-2 tablespoons toasted sesame seeds
-1 teaspoon sesame oil
+    <h2> Ingredients</h2>
+<ul>
+  <li> 1 tablespoon canola oil </li>
+<li> ½ pound tofu, cut in small dice </li>
+<li> 1 large garlic clove, minced </li>
+<li> 1 teaspoon grated or minced fresh ginger </li>
+<li> ¼ teaspoon red chili flakes </li>
+<li> Soy sauce to taste </li>
+<li> 16-ounce bag baby spinach, rinsed </li>
+<li> 2 tablespoons toasted sesame seeds </li>
+<li> 1 teaspoon sesame oil </li>
+      </ul>
+    
+    </div>
+    
+    <div class="imagebar">
+      <img src="excercise 7 image.jpg"/ alt= "for now" width=" 300" height="250" > 
+  
+    
+      
 
-Preparation
+      <h3>Preparation</h3>
 
-Step 1
-Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.
+      <h4>Step 1</h4>
+      <p>Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.</p>
 
-Step 2
-Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.
+      <h4>Step 2 </h4>
+      <p>Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.</p>
 
-Tip
-Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.
-
+      <h4> Tip</h4>
+      <p>Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.</p>
+        </div>
+    </div>
+  </body>
 </html>
